@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Card = (props) => {
-  const { id, size, immagine, prezzo, nome, descrizione } = props;
+  const { id, size, immagine, nome, descrizione } = props;
 
   return (
     <>
