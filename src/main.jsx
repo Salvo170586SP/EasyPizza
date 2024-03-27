@@ -7,7 +7,7 @@ import DetailPizza from "./pages/DetailPizza.jsx";
 import About from "./pages/About.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import Contact from "./pages/Contact.jsx";
-
+ 
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,7 +32,8 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  
   <React.StrictMode>
-    <RouterProvider router={router} />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );

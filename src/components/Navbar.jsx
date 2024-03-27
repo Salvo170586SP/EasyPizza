@@ -15,8 +15,13 @@ const Navbar = () => {
           <div className="p-4 flex flex-row items-center justify-between">
             <Link
               to="/"
-              className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+              className="text-lg flex items-center font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
             >
+              <img
+                width={60}
+                src="https://previews.123rf.com/images/andyadi/andyadi1806/andyadi180600264/103255512-pizza-vector-icon-logo-design-for-restaurant-and-cafe-bistro.jpg"
+                alt=""
+              />
               EasyPizza
             </Link>
             <button
@@ -47,19 +52,18 @@ const Navbar = () => {
           >
             <div className={` flex flex-col  md:justify-end md:flex-row `}>
               <Link
-                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                to='/about'
+                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus-visible:outline-none"
+                to="/about"
               >
-                About
+                Chi siamo
               </Link>
               <Link
-                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus-visible:outline-none"
                 to="/contact"
               >
-                Contact
+                Contattaci
               </Link>
             </div>
- 
           </nav>
         </div>
       </header>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Jumbotron = () => {
   return (
     <>
@@ -12,8 +14,9 @@ const Jumbotron = () => {
           className="absolute w-full h-full  top-0 bottom-0 left-0 right-0 z-0"
           style={{ backgroundColor: "#00000091" }}
         ></div>
-        <div className="flex justify-center items-center text-white  w-full h-full">
-          <h1 className="z-10 text-4xl text-bold">Le nostre specialità</h1>
+        <div className="container px-5 mx-auto flex flex-col justify-center items-center text-white  w-full h-full">
+          <h1 className="z-10 text-5xl text-bold mb-5">Le nostre specialità</h1>
+          <p className="z-10 text-1xl text-bold"><Link className="bg-yellow-600 hover:bg-yellow-500  rounded p-2" to={'/contact'}>Contattaci</Link> per prenotazioni e info </p>
         </div>
       </section>
     </>
