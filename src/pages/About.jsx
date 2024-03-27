@@ -19,11 +19,12 @@ function About() {
             <div className="my-5">
               <div className="text-xl font-bold">Salvatore Pitanza</div>
               <div>Età: 37</div>
+              <div>Full Stack Web Developer</div>
               <div>Specializzando in: Laravel, Mysql, React</div>
             </div>
             <h2 className="text-2xl font-bold mb-5">Chi Siamo?</h2>
             <p>
-              In realtà sono solo io 😄. <br />
+              Beh in realtà è solo il qui presente😄. <br />
               Questa è un applicazione demo realizzata con React da me, mettendo
               in pratica le mie conoscenze da junior full stack web developer.
               Il progetto prende dati da un array interno, non fa uso di

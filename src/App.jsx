@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import data from "./Api/dataPizza";
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
+import { Link } from "react-router-dom";
 
 function App() {
   const [dataPizza, setDataPizza] = useState(data);
@@ -41,6 +42,16 @@ function App() {
         } w-full flex flex-col sticky top-[80px] bg-white transition justify-center items-center   py-6`}
         style={{ zIndex: "3" }}
       >
+        <p className="z-10 text-lg text-bold mb-5">
+          <Link
+            className="text-yellow-600 hover:text-yellow-500"
+            to={"/contact"}
+          >
+            Contattaci
+          </Link>{" "}
+          per info e prenotazioni
+        </p>
+
         <input
           className="shadow-lg mx-2 px-2 md:px-10 py-6 border-2 border-yellow-500 rounded-lg text-3xl h-[70px]  focus:outline-none   focus-visible:border-yellow-400 "
           type="text"
@@ -49,7 +60,9 @@ function App() {
           onChange={(e) => setName(e.target.value)}
         />
         <div className="my-3">
-          Risultati di ricerca: <span className="font-bold">{pizzeFiltrate.length}</span> pizze in lista
+          Risultati di ricerca:{" "}
+          <span className="font-bold">{pizzeFiltrate.length}</span> pizze in
+          lista
         </div>
       </div>
 

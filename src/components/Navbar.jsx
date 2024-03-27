@@ -61,7 +61,7 @@ const Navbar = () => {
                 className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus-visible:outline-none"
                 to="/contact"
               >
-                Contattaci
+                Prenota
               </Link>
             </div>
           </nav>
