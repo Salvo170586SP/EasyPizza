@@ -5,7 +5,7 @@ const Card = (props) => {
   
   return (
     <>
-      <div className=" relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 hover:shadow-lg shadow-md">
+      <div className=" relative flex justify-between w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 hover:shadow-lg shadow-md">
         <div className="relative mx-4 -mt-6 h-[200px] overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           {immagine ? (
             <img

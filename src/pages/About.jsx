@@ -13,16 +13,18 @@ function About() {
         >
           Torna alla home
         </Link>
-        <div className="bg-slate-50 border border-slate-300 p-3 rounded-lg flex">
-          <img src={img} alt="img" className="rounded-lg" />
-          <div className="p-5">
-            <div className="my-5">
+        <div className="bg-yellow-50 border border-yellow-300 p-3 rounded-lg flex flex-col md:flex-row mx-5">
+          <figure className="min-w-[350px] h-[400px]">
+            <img src={img} alt="img" className="rounded-lg object-cover" />
+          </figure>
+          <div className="px-5">
+            <div className="mt-2">
               <div className="text-xl font-bold">Salvatore Pitanza</div>
               <div>Età: 37</div>
               <div>Full Stack Web Developer</div>
               <div>Specializzando in: Laravel, Mysql, React</div>
             </div>
-            <h2 className="text-2xl font-bold mb-5">Chi Siamo?</h2>
+            <h2 className="text-2xl font-bold my-3">Chi Siamo?</h2>
             <p>
               Beh in realtà è solo il qui presente😄. <br />
               Questa è un applicazione demo realizzata con React da me, mettendo

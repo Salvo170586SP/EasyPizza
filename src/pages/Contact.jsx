@@ -6,6 +6,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const isSend = (e) => {
     e.preventDefault();
@@ -16,6 +17,14 @@ function Contact() {
 
     setEmail("");
     setDescription("");
+
+    if (email == "" && email !== "@" && description == "") {
+      setError(true);
+
+      setTimeout(() => {
+        setError(false);
+      }, 5000);
+    }
   };
 
   const isClose = () => {
@@ -47,8 +56,9 @@ function Contact() {
                 value={email}
                 type="email"
                 id="mail"
-                className="shadow-md p-2 border-2 border-yellow-500 rounded-lg focus:outline-none focus-visible:border-yellow-400 w-full"
+                className={`${error == true ? "border-red-500" : ""}  shadow-md p-2 border-2 border-yellow-500 rounded-lg focus:outline-none focus-visible:border-yellow-400 w-full `}
               />
+              <span className="text-red-500 font-bold mt-1">{error == true ? "la mail è obbligatoria" : ""}</span>
             </div>
 
             <div className="flex flex-col">
@@ -57,9 +67,10 @@ function Contact() {
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={10}
-                className="shadow-md border-2 p-2 border-yellow-500 rounded-lg focus:outline-none focus-visible:border-yellow-400 "
+                className={`${error == true ? "border-red-500" : ""}  shadow-md border-2 p-2 border-yellow-500 rounded-lg focus:outline-none focus-visible:border-yellow-400 `} 
                 id="description"
               ></textarea>
+              <span className="text-red-500 font-bold mt-1">{error == true ? "il testo è obbligatorio" : ""}</span>
             </div>
 
             <button className="select-none mt-5 rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-yellow-500/20 transition-all hover:shadow-lg hover:shadow-yellow-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">

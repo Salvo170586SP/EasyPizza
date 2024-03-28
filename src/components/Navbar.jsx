@@ -52,13 +52,13 @@ const Navbar = () => {
           >
             <div className={` flex flex-col  md:justify-end md:flex-row `}>
               <Link
-                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus-visible:outline-none"
+                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-yellow-400 focus:bg-yellow-400 focus-visible:outline-none"
                 to="/about"
               >
                 Chi siamo
               </Link>
               <Link
-                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus-visible:outline-none"
+                className="inline-block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-yellow-400 focus:bg-yellow-400 focus-visible:outline-none"
                 to="/contact"
               >
                 Prenota
