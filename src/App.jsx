@@ -53,7 +53,7 @@ function App() {
         </p>
 
         <input
-          className="shadow-lg mx-2 px-2 md:px-10 py-6 border-2 border-yellow-500 rounded-lg text-3xl h-[70px]  focus:outline-none   focus-visible:border-yellow-400 "
+          className="shadow-lg mx-2 px-2 md:px-10 py-6 border-2 border-yellow-500 rounded-lg text-2xl h-[70px]  focus:outline-none   focus-visible:border-yellow-400 "
           type="text"
           value={name}
           placeholder="cerca pizza..."
